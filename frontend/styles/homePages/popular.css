@@ -1,0 +1,27 @@
+/* globals color and font */
+:root {
+  --main-font: "Poppins", sans-serif; /* Set your desired font stack */
+  --text-color-black: #000000c9; /* Set your desired text color */
+  --background-color-white: #fff; /* Set your desired background color */
+  --background-color-green: #0b7044;
+}
+/* Set global styles */
+* {
+  color: var(--text-color-black);
+  background-color: var(--background-color-white);
+  font-family: var(--main-font);
+  font-weight: normal;
+}
+/* all of section will apply it */
+section {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px; /* Add padding for spacing inside the section */
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* medium screen like (ipad...) */
+}
+@media (min-width: 320px) and (max-width: 767.98px) {
+  /* small screen like  (Iphone...) */
+}

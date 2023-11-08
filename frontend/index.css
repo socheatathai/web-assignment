@@ -1,0 +1,418 @@
+:root {
+  --main-font: "Poppins", sans-serif; /* Set your desired font stack */
+  /* --colors-black-normal: #000000c9; Set your desired text color */
+  /* --cc-1: #fff; Set your desired background color */
+  /* --colors-green-dark: #0b7044; */
+  /* --colors-green-light: #e7f1ec; */
+  --cc-1: #fff;
+  --colors-green-light: rgba(231, 241, 236, 1);
+  --colors-green-light-hover: rgba(218, 234, 227, 1);
+  --colors-green-light-active: rgba(179, 211, 197, 1);
+
+  --colors-green-normal: rgba(11, 112, 68, 1);
+  --colors-green-normal-hover: rgba(10, 101, 61, 1);
+  --colors-green-normal-active: rgba(9, 90, 54, 1);
+
+  --colors-green-dark: rgba(8, 84, 51, 1);
+  --colors-green-dark-hover: rgba(7, 67, 41, 1);
+  --colors-green-dark-active: rgba(5, 50, 31, 1);
+  --colors-green-darker: rgba(4, 39, 24, 1);
+
+  --colors-black-light: #e7f1ec;
+  --colors-black-light-hover: rgba(223, 222, 221, 1);
+  --colors-black-light-active: rgba(188, 187, 186, 1);
+
+  --colors-black-normal: rgba(39, 37, 31, 1);
+  --colors-black-normal-hover: rgba(35, 33, 28, 1);
+  --colors-black-normal-active: rgba(31, 30, 25, 1);
+
+  --colors-black-dark: rgba(29, 28, 23, 1);
+  --colors-black-dark-hover: rgba(23, 22, 19, 1);
+  --colors-black-dark-active: rgba(18, 17, 14, 1);
+  --colors-black-darker: rgba(14, 13, 11, 1);
+
+  --colors-white-light: rgba(255, 255, 255, 1);
+  --colors-white-light-active: rgba(255, 255, 255, 1);
+  --colors-white-normal: rgba(255, 255, 255, 1);
+  --colors-white-light-hover: rgba(255, 255, 255, 1);
+  --colors-white-normal-hover: rgba(230, 230, 230, 1);
+  --colors-white-normal-active: rgba(204, 204, 204, 1);
+
+  --colors-white-dark: rgba(191, 191, 191, 1);
+  --colors-white-dark-hover: rgba(153, 153, 153, 1);
+  --colors-white-dark-active: rgba(115, 115, 115, 1);
+  --colors-white-darker: rgba(89, 89, 89, 1);
+
+  --eff-1: 0px 4px 20px 0px rgba(11, 112, 68, 0.7);
+  --eff-2: 0px 4px 40px 0px rgba(11, 112, 68, 0.59);
+  --eff-3: 10px 9px 15px 0px rgba(0, 0, 0, 0.1);
+  --eff-4: 0px -7px 25px 0px rgba(0, 0, 0, 0.06);
+  --eff-5: 20px 30px 25px 0px rgba(0, 0, 0, 0.15);
+  --err: ;
+  --eff-7: 47px 12px 109px 0px rgba(0, 0, 0, 0.31);
+}
+* {
+  font-family: var(--main-font);
+  font-weight: normal;
+}
+.mainNav {
+  background-color: var(--colors-green-light);
+}
+/* section set global  */
+section {
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  height: 500px;
+  background-color: var(--colors-white-light);
+}
+.dropdown {
+  display: none;
+}
+.custom-dropdown {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5%;
+}
+.linkNav {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+  width: 300px;
+}
+.linkNav a {
+  color: var(--colors-black-normal);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  position: relative;
+  font-family: var(--main-font);
+}
+.linkNav a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--colors-green-dark);
+  transition: width 0.3s ease; /* Smooth transition effect for the underline */
+}
+.linkNav a:hover::before,
+.linkNav a.active::before {
+  width: 100%; /* Apply the same underline effect for hover and active states */
+}
+.searchNav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+}
+.btnSearch {
+  padding: 10px;
+  border: none;
+  background-color: var(--colors-white-light);
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: normal;
+}
+form input.search {
+  width: 200px;
+  border: unset;
+  outline: none;
+  font-size: small;
+  font-family: var(--main-font);
+}
+.searchNav .btnShop {
+  padding-bottom: 50px;
+}
+.searchNav .btnShop img {
+  background-color: var(--colors-green-dark);
+  color: var(--cc-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: 6px;
+}
+
+/* ============footer========== */
+.footerMain {
+  background-color: var(--colors-green-light);
+  height: 400px;
+}
+.footerSub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frame {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem; /* 40px to rem */
+  position: relative;
+}
+
+.frame .brand-logo {
+  position: relative;
+  width: 5.3125rem; /* 85px to rem */
+  height: 5.3125rem; /* 85px to rem */
+  mix-blend-mode: darken;
+}
+
+.frame .div {
+  flex-direction: column;
+  align-items: center;
+  gap: 2.8125rem; /* 45px to rem */
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-2 {
+  align-items: flex-start;
+  gap: 1.875rem; /* 30px to rem */
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .shop {
+  position: relative;
+  width: 2.9375rem; /* 47px to rem */
+  height: 1.8125rem; /* 29px to rem */
+}
+
+.frame .text-wrapper {
+  position: absolute;
+  top: -0.0625rem; /* -1px to rem */
+  left: 0;
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: var(--colors-black-light-active);
+  font-size: 1.125rem; /* 18px to rem */
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .popular {
+  position: relative;
+  width: 4.375rem; /* 70px to rem */
+  height: 1.8125rem; /* 29px to rem */
+}
+
+.frame .our-product {
+  position: relative;
+  width: 5rem; /* 80px to rem */
+  height: 1.8125rem; /* 29px to rem */
+}
+
+.frame .contact-us {
+  position: relative;
+  width: 6.75rem; /* 108px to rem */
+  height: 1.8125rem; /* 29px to rem */
+}
+
+.frame .div-3 {
+  align-items: center;
+  gap: 4.375rem; /* 70px to rem */
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .img {
+  position: relative;
+  width: 3.125rem; /* 50px to rem */
+  height: 3.125rem; /* 50px to rem */
+  object-fit: cover;
+}
+.text-footer {
+  height: 80px;
+  background-color: var(--colors-green-normal);
+}
+
+.text-footer .text-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dropdown {
+    display: none;
+  }
+  .navbar {
+    padding: 10px 4%;
+    max-width: auto;
+  }
+  .linkNav {
+    gap: 0.2rem;
+  }
+  .linkNav a {
+    font-size: 0.7rem;
+  }
+  .logoNav {
+    display: none;
+  }
+  .btnSearch {
+    padding: 8px;
+    font-size: 0.7rem;
+  }
+  form input.search {
+    width: 170px;
+    font-size: small;
+  }
+  .searchNav .btnShop {
+    padding-bottom: 50px;
+  }
+  .searchNav .btnShop img {
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+  }
+  /* ============footer========== */
+  .footerMain {
+    background-color: var(--colors-green-light);
+    height: 300px;
+  }
+
+  .text-footer {
+    height: 65px;
+    background-color: var(--colors-green-normal);
+  }
+
+  .text-footer .text-wrapper {
+    font-size: 15px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .navbar {
+    padding: 10px 10%;
+    /* width: 500px; */
+    justify-content: space-around;
+  }
+  .linkNav {
+    display: none;
+  }
+  .logoNav {
+    display: none;
+  }
+  .btnSearch {
+    padding: 8px;
+    font-size: 0.7rem;
+  }
+  form input.search {
+    width: 100px;
+    font-size: small;
+  }
+  .searchNav {
+    width: 150px;
+    gap: 7px;
+  }
+  .searchNav .btnShop {
+    padding-bottom: 43px;
+  }
+  .searchNav .btnShop img {
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+  }
+  .custom-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .custom-btn {
+    background-color: var(--colors-green-dark);
+    color: var(--cc-1);
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a smooth transition on background color */
+  }
+
+  .custom-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cc-1);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0; /* Initially, set opacity to 0 */
+    transform: translateY(-10px); /* Move it up slightly to hide */
+    transition: opacity 0.3s, transform 0.3s; /* Add smooth transition on opacity and transform */
+  }
+
+  .custom-dropdown-content a {
+    color: var(--colors-black-normal);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .custom-dropdown-content .actions {
+    background-color: var(--colors-green-light);
+    color: var(--colors-green-dark);
+  }
+
+  .custom-dropdown-content a:hover {
+    background-color: var(--colors-green-light);
+    color: var(--colors-green-dark);
+  }
+
+  .custom-dropdown:hover .custom-btn {
+    background-color: #0000003e; /* Change the background color when hovering on the dropdown */
+  }
+
+  .custom-dropdown:hover .custom-dropdown-content {
+    display: block;
+    opacity: 1; /* Fade in the content */
+    transform: translateY(0); /* Move it back to its original position */
+  }
+  /* ============footer========== */
+  footerMain {
+    background-color: var(--colors-green-light);
+    height: 300px;
+  }
+  .text-footer {
+    height: 40px;
+    background-color: var(--colors-green-normal);
+  }
+
+  .text-footer .text-wrapper {
+    padding-top: 12px;
+    font-size: 10px;
+  }
+  .frame .text-wrapper {
+    left: 1.5rem;
+    font-size: 0.9rem; /* 18px to rem */
+  }
+  .frame .div-3 {
+    gap: 1rem; /* 70px to rem */
+  }
+  .frame .img {
+    width: 2.5; /* 50px to rem */
+    height: 2.5; /* 50px to rem */
+  }
+  .frame .div-2 {
+    gap: 1rem; /* 30px to rem */
+  }
+}

@@ -1,4 +1,4 @@
-                                                 --------- front end  structure ---------
+                                                 --------- Project & structure ---------
 
 ```md
 ...
@@ -38,4 +38,12 @@
 
 |    |    |--  readme.md detail for structure
 
+
+                                                 --------- Project & structure ---------
+
+```md
+...
+|-- guideline  for backend --|
+
+--coming soon
 

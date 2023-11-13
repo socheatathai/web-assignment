@@ -63,7 +63,6 @@ section {
   margin: 0 auto;
   text-align: center;
   padding: 5px;
-  height: 500px;
   background-color: var(--colors-white-light);
 }
 .dropdown {
@@ -106,7 +105,7 @@ section {
   bottom: 0;
   left: 0;
   background-color: var(--colors-green-dark);
-  transition: width 0.3s ease; /* Smooth transition effect for the underline */
+  transition: width 0.2s ease; /* Smooth transition effect for the underline */
 }
 .linkNav a:hover::before,
 .linkNav a.active::before {
@@ -160,6 +159,7 @@ form input.search {
   align-items: center;
 }
 .frame {
+  margin-top: 50px;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -256,7 +256,17 @@ form input.search {
   letter-spacing: 0;
   line-height: normal;
 }
-
+/* google Map  */
+.googleMapMain {
+  height: 650px;
+  width: 100%;
+}
+.googleMapMain .googleMap {
+  height: 500px;
+  width: 100%;
+  padding: 10px 10%;
+  border: 10px solid;
+}
 @media (min-width: 768px) and (max-width: 991.98px) {
   .dropdown {
     display: none;
@@ -303,6 +313,17 @@ form input.search {
 
   .text-footer .text-wrapper {
     font-size: 15px;
+  }
+  /* google Map  */
+  .googleMapMain {
+    height: 450px;
+    width: 100%;
+  }
+  .googleMapMain .googleMap {
+    height: 350px;
+    width: 100%;
+    padding: 10px 10%;
+    border: 10px solid;
   }
 }
 @media (min-width: 320px) and (max-width: 767.98px) {
@@ -414,5 +435,16 @@ form input.search {
   }
   .frame .div-2 {
     gap: 1rem; /* 30px to rem */
+  }
+   /* google Map  */
+  .googleMapMain {
+    height: 400px;
+    width: 100%;
+  }
+  .googleMapMain .googleMap {
+    height: 350px;
+    width: 100%;
+    padding: 10px 10%;
+    border: 10px solid;
   }
 }

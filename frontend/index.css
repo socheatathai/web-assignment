@@ -57,6 +57,9 @@
 }
 .mainNav {
   background-color: var(--colors-green-light);
+  position: sticky;
+  z-index: 999;
+  top: 0;
 }
 /* section set global  */
 section {

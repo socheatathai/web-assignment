@@ -43,8 +43,8 @@
   --colors-white-dark-active: rgba(115, 115, 115, 1);
   --colors-white-darker: rgba(89, 89, 89, 1);
 
-  --colors-card-background:#F7F7F7;
-  --colors-card-hover:#E7F1EC;
+  --colors-card-background: #f7f7f7;
+  --colors-card-hover: #e7f1ec;
 
   --eff-1: 0px 4px 20px 0px rgba(11, 112, 68, 0.7);
   --eff-2: 0px 4px 40px 0px rgba(11, 112, 68, 0.59);
@@ -53,7 +53,6 @@
   --eff-5: 20px 30px 25px 0px rgba(0, 0, 0, 0.15);
   --err: ;
   --eff-7: 47px 12px 109px 0px rgba(0, 0, 0, 0.31);
-
 }
 * {
   font-family: var(--main-font);
@@ -284,6 +283,7 @@ form input.search {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 4% 0px;
 }
 .text-title {
   padding: 2px 0px;
@@ -361,10 +361,9 @@ form input.search {
 
 /* .................Popular Products...................... */
 
-.row-style{
+.row-style {
   width: 80%;
   margin: 0 auto;
-  
 }
 .popular-products {
   justify-content: center;
@@ -403,7 +402,7 @@ form input.search {
   border-bottom-right-radius: 6px;
 }
 
-.discount .discount-text{
+.discount .discount-text {
   margin: 3px 0px;
   font-size: 10px;
 }
@@ -516,7 +515,7 @@ form input.search {
   font-weight: 700;
 }
 
-.box_discount{
+.box_discount {
   width: 177px;
   height: 13px;
   position: relative;
@@ -524,7 +523,7 @@ form input.search {
   bottom: 0;
 }
 
-.box_discount .vector_discount{
+.box_discount .vector_discount {
   width: 110px;
   height: 19px;
   margin-top: -35px;
@@ -534,19 +533,17 @@ form input.search {
 }
 @media only screen and (max-width: 426px) {
   .popular-products .vector {
-      display: none;
+    display: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .row-style{
+  .row-style {
     width: 80%;
     margin: 0 auto;
-    
   }
 }
 /* ................................ */
-
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .dropdown {
@@ -613,6 +610,7 @@ form input.search {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 4% 0px;
   }
   .green-tea-img {
     width: 400px;
@@ -793,6 +791,7 @@ form input.search {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 4% 0px;
   }
   .green-tea-img {
     width: 250px;

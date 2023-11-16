@@ -55,6 +55,9 @@
   font-family: var(--main-font);
   font-weight: normal;
 }
+a {
+  text-decoration: none;
+}
 .mainNav {
   background-color: var(--colors-green-light);
 }
@@ -269,23 +272,32 @@ form input.search {
 }
 /* Detail Green Tea css */
 .greenTeaDetail {
-  height: 630px;
+  padding: 10px 2%;
+  height: 500px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+.text-title {
+  padding: 2px 0px;
+  gap: 5px;
+}
 .green-tea-img {
   width: 500px;
-  padding-top: 10px;
-  margin-right: 100px;
+}
+.green-tea-img img {
+  width: 290px;
+  height: 470px;
+  flex-shrink: 0;
 }
 .text-green-tea {
   width: 650px;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 60px;
+  gap: 55px;
 }
+
 .underline-price {
   font-weight: 500;
   color: var(--colors-white-dark-active);
@@ -330,6 +342,7 @@ form input.search {
 }
 .green-tea-text-p {
   text-align: start;
+  width: 90%;
 }
 .text-green-tea .text-price {
   display: flex;
@@ -413,7 +426,7 @@ form input.search {
   }
   .text-green-tea {
     width: 600px;
-    gap: 60px;
+    gap: 30px;
   }
 
   .underline-price {
@@ -425,6 +438,7 @@ form input.search {
   /* use global */
   .green-tea-text-p {
     text-align: start;
+    font-size: 15px;
   }
 
   .custom-btn-buy-now {
@@ -576,8 +590,8 @@ form input.search {
   }
   /* Detail Green Tea css */
   .greenTeaDetail {
-    height: 1200px;
-    width: max-content;
+    height: 900px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -587,11 +601,17 @@ form input.search {
   .green-tea-img {
     width: 250px;
   }
+  .green-tea-img img {
+    width: 250px;
+    height: 400px;
+  }
   .text-green-tea {
-    width: 650px;
+    margin: 0 auto;
+    width: 300px;
+    gap: 10px;
   }
   .underline-price {
-    font-size: 20px;
+    font-size: 16px;
   }
   /* use global */
 
@@ -600,6 +620,7 @@ form input.search {
     padding: 12px 20px;
     background-color: var(--colors-green-normal);
     border-radius: 5px;
+    margin: 0 auto;
   }
 
   .custom-btn-buy-now .btn-buy-now-text {
@@ -609,13 +630,29 @@ form input.search {
   }
 
   .text-green-tea h1 {
-    font-size: 60.1px;
+    font-size: 30.1px;
+    margin: 0 auto;
     font-weight: 600;
     color: var(--colors-green-darker);
     letter-spacing: 0;
     line-height: normal;
   }
-  .text-green-tea .green-tea-p-text {
+  .text-green-tea .text-price {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  .text-green-tea .green-tea-text-p {
+    font-size: 12px;
     text-align: center;
+    margin: 0 auto;
+  }
+  .revert-green-tea2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .text-title {
+    margin: 0 auto;
   }
 }

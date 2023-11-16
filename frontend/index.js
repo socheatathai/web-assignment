@@ -7,3 +7,13 @@ function initMap() {
   });
 }
 console.log(initMap);
+
+
+// popular products
+var likeBtns = document.querySelectorAll('.like-btn');
+likeBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+        this.classList.toggle('fas');
+        this.classList.toggle('far');
+    });
+});

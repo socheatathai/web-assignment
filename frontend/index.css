@@ -531,21 +531,13 @@ form input.search {
   font-family: "Poppins-Bold", Helvetica;
   font-weight: 700;
 }
-@media only screen and (max-width: 426px) {
-  .popular-products .vector {
-    display: none;
-  }
-}
+/* ................................ */
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .row-style {
     width: 80%;
     margin: 0 auto;
   }
-}
-/* ................................ */
-
-@media (min-width: 768px) and (max-width: 991.98px) {
   .dropdown {
     display: none;
   }
@@ -663,6 +655,9 @@ form input.search {
   }
 }
 @media (min-width: 320px) and (max-width: 767.98px) {
+  .popular-products .vector {
+    display: none;
+  }
   .navbar {
     padding: 10px 10%;
     justify-content: space-around;

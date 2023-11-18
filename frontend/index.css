@@ -224,16 +224,19 @@ form input.search {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.2s ease;
+  transition: left 2ms ease-in-out;
+
 }
 
 .dot.active {
   background-color: #717171;
 }
 .img-main-home-page {
-  padding: 10% 5px;
+  padding: 3% 10%;
+  overflow: hidden;
 }
 .img-main-home-page img {
+  padding: 10px 10px;
   width: 380px;
   height: 350px;
 }

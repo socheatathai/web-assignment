@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Autoplay functionality
   setInterval(() => {
     goToSlide(index + 1);
-  }, 5000); // Adjust the interval (in milliseconds) as needed
+  }, 8000); // Adjust the interval (in milliseconds) as needed
 
   function goToSlide(i) {
     if (i < 0) {

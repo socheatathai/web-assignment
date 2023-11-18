@@ -49,11 +49,11 @@
   --err: ;
   --eff-7: 47px 12px 109px 0px rgba(0, 0, 0, 0.31);
 }
-
 section {
   margin: 0;
   padding: 0;
 }
+
 .slide-main {
   display: flex;
   height: 600px;
@@ -95,20 +95,18 @@ section {
   align-items: center;
   top: 0;
   left: 100%;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 10px;
   overflow: hidden;
-  /* transition: right 5s ease-out; */
+  /* transition: right 500ms ease-out; */
 }
 
 .carousel-item.active {
   left: 0;
 }
+
 .button-other-now {
-  position: absolute;
-  top: 80%;
-  left: 78%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   padding: 10px 20px;
   background-color: var(--colors-green-normal);
   color: white;
@@ -116,21 +114,36 @@ section {
   border-radius: 57px;
   cursor: pointer;
 }
-.text-discount {
+.size-main {
+  padding-top: 50px;
   display: flex;
-  gap: 15px;
-  width: 240px;
-}
-.button-discount {
-  display: flex;
-  padding: 10px 20px;
   justify-content: center;
-  border-radius: 30px;
   align-items: center;
-  font-size: medium;
-  gap: 10px;
-  background-color: #f22;
-  color: white;
+  height: 400px;
+}
+.option-size {
+  width: 500px;
+}
+.title img {
+  width: 100%;
+}
+
+.option-img {
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.selected {
+  background-color: none; /* Adjust the color as needed */
+  width: 145px;
+  height: 145px;
+  display: flex;
+  padding: 4.933px;
+  justify-content: center;
+  align-items: center;
+  border: 5px var(--colors-green-normal) solid;
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -150,11 +163,12 @@ section {
     font-size: 30px;
   }
 }
+
 @media (min-width: 320px) and (max-width: 767.98px) {
   .slide-main {
     display: flex;
     flex-direction: column;
-    height: 700px;
+    height: 650px;
   }
   .slider-left-img {
     width: 100%;
@@ -166,34 +180,18 @@ section {
   }
   .slide-right-text {
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 80px;
   }
   .main-text {
     text-align: center;
   }
   .button-other-now {
-    position: absolute;
-    top: 7%;
-    left: 64%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     padding: 10px 20px;
     background-color: var(--colors-green-normal);
     color: white;
     border: none;
     border-radius: 57px;
     cursor: pointer;
-  }
-  .text-discount {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .button-discount {
-    display: flex;
-    padding: 4px 15px;
-    border-radius: 30px;
-    font-size: small;
-    gap: 7px;
   }
 }

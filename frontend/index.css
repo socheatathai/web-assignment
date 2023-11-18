@@ -43,8 +43,8 @@
   --colors-white-dark-active: rgba(115, 115, 115, 1);
   --colors-white-darker: rgba(89, 89, 89, 1);
 
-  --colors-card-background:#F7F7F7;
-  --colors-card-hover:#E7F1EC;
+  --colors-card-background: #f7f7f7;
+  --colors-card-hover: #e7f1ec;
 
   --eff-1: 0px 4px 20px 0px rgba(11, 112, 68, 0.7);
   --eff-2: 0px 4px 40px 0px rgba(11, 112, 68, 0.59);
@@ -53,7 +53,6 @@
   --eff-5: 20px 30px 25px 0px rgba(0, 0, 0, 0.15);
   --err: ;
   --eff-7: 47px 12px 109px 0px rgba(0, 0, 0, 0.31);
-
 }
 * {
   font-family: var(--main-font);
@@ -284,6 +283,7 @@ form input.search {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 4% 0px;
 }
 .text-title {
   padding: 2px 0px;
@@ -361,10 +361,9 @@ form input.search {
 
 /* .................Popular Products...................... */
 
-.row-style{
+.row-style {
   width: 80%;
   margin: 0 auto;
-  
 }
 .popular-products {
   justify-content: center;
@@ -403,7 +402,7 @@ form input.search {
   border-bottom-right-radius: 6px;
 }
 
-.discount .discount-text{
+.discount .discount-text {
   margin: 3px 0px;
   font-size: 10px;
 }
@@ -516,7 +515,7 @@ form input.search {
   font-weight: 700;
 }
 
-.box_discount{
+.box_discount {
   width: 177px;
   height: 13px;
   position: relative;
@@ -524,7 +523,7 @@ form input.search {
   bottom: 0;
 }
 
-.box_discount .vector_discount{
+.box_discount .vector_discount {
   width: 110px;
   height: 19px;
   margin-top: -35px;
@@ -532,123 +531,16 @@ form input.search {
   font-family: "Poppins-Bold", Helvetica;
   font-weight: 700;
 }
-@media only screen and (max-width: 426px) {
-  .popular-products .vector {
-      display: none;
-  }
-}
+/* ................................ */
 
-@media (min-width: 768px) and (max-width: 992px) {
-  .row-style{
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .row-style {
     width: 80%;
     margin: 0 auto;
-    
   }
 }
 /* ................................ */
 
-/* Get in touch with us */
-
-.info-text{
-  font-family: "Poppins-Regular", Helvetica;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.contact-text-info{
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: bold;
-  margin: 10px;
-}
-.background{
-  width: 100%;
-  background: linear-gradient( 90deg, var(--colors-green-light) 70%, var(--colors-green-normal) 30%);
-  height: auto;
-}
-
-@media (max-width:480px) {
-  .background{
-    width: 100%;
-    background: var(--colors-green-light);
-    height: auto;
-  }
-}
-
-.form-container {
-  background-color: var(--colors-green-light);
-  padding: 30px;
-  margin: 50px auto;
-  width: 80%;
-  padding: 12px 20px;
-  height: 500px;
-  border: none;
-  text-align: left;
-  color: var(--colors-green-dark-active);
-}
-.description-get-touch-with-us{
-  color: var(--colors-white-dark-active);
-
-}
-
-.form-container .form-style{
-  width: 100%;
-
-}
-
-.form-container .form-group{
- margin-bottom: 5%;
- width: 100%;
-}
-input[type=text], input[type=email], textarea {
-  background-color: var(--colors-green-light); /* Light gray background */
-  border: none;
-  border-bottom: 2px solid  gray;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.contact-container{
-  position: relative;
-  background-color: var(--colors-green-dark-active); /* Light gray background */
-  /* border: 1px solid #fff; */
-  padding: 30px;
-  margin: 65px auto;
-  width: 80%;
-  height: 350px;
-  text-align: left;
-  color: #fff;
-}
- .contact-container .info-style{
-  display: flex;
-  align-items: center;
-  margin: 10px;
- }
- .info-text-style{
-  margin-left: 10px;
- }
-
- .icon-info{
-  margin-bottom: 10px;
- }
-
-.contact-container .small-box{
-  position: absolute; /* This positions the small box relative to the main box */
-  top: -18px; /* This positions the small box at the top of the main box */
-  left: -21px; /* This positions the small box at the left of the main box */
-  width: 45px;
-  height: 45px;
-  background: var(--colors-green-normal); /* Blue background */
-}
-
-/* ................................... */
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .dropdown {
@@ -715,6 +607,7 @@ input[type=submit] {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 4% 0px;
   }
   .green-tea-img {
     width: 400px;
@@ -767,6 +660,9 @@ input[type=submit] {
   }
 }
 @media (min-width: 320px) and (max-width: 767.98px) {
+  .popular-products .vector {
+    display: none;
+  }
   .navbar {
     padding: 10px 10%;
     justify-content: space-around;
@@ -895,6 +791,7 @@ input[type=submit] {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 4% 0px;
   }
   .green-tea-img {
     width: 250px;

@@ -55,6 +55,7 @@ section {
   padding: 0;
 }
 .slide-main {
+  background-color: var(--colors-green-light);
   display: flex;
   height: 600px;
   padding: 10px 5%;
@@ -80,7 +81,7 @@ section {
   padding-top: 10px;
 }
 .carousel {
-  background-color: var(--colors-green-light);
+  /* background-color: var(--colors-green-light); */
   position: relative;
   width: 100vw;
   height: 600px;

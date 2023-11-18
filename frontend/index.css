@@ -156,6 +156,126 @@ form input.search {
   position: absolute;
   margin-top: 6px;
 }
+/*  main home page */
+/* Add your existing styles here */
+.main-home-page {
+  width: 100%;
+  height: 100%;
+}
+#slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding: 10px 8%;
+}
+
+/* Add styles for navigation buttons and dots */
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+#prevBtn,
+#nextBtn {
+  cursor: pointer;
+  border-radius: 100%;
+  background: var(--colors-green-light-active, #b3d3c5);
+  color: white;
+  border: none;
+  display: inline-flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main-dot {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.slider-dots {
+  background-color: #d9d9d9;
+  border-radius: 90px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+.img-main-home-page {
+  padding: 10% 5px;
+}
+.img-main-home-page img {
+  width: 380px;
+  height: 350px;
+}
+.text-main-home-page {
+  width: 400px;
+}
+.text-main-home-page h1 {
+  color: var(--colors-green-darker, #042718);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 2% 5px;
+}
+.text-main-home-page h6 {
+  color: var(--colors-white-dark-active, #737373);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 1% 5px;
+}
+.text-main-home-page p {
+  color: var(--colors-white-dark-active, #737373);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 1% 5px;
+}
+.btn-buy-now-slide {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  padding: 5px 13px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--colors-green-normal);
+  color: white;
+  border-radius: 50px;
+}
 
 /* ============footer========== */
 .footerMain {
@@ -653,6 +773,23 @@ form input.search {
     display: flex;
     gap: 10px;
   }
+
+  .img-main-home-page img {
+    width: 350px;
+    height: 320px;
+  }
+  .text-main-home-page h1 {
+    color: var(--colors-green-darker, #042718);
+    font-size: 18px;
+  }
+  .text-main-home-page h6 {
+    color: var(--colors-white-dark-active, #737373);
+    font-size: 15px;
+  }
+  .text-main-home-page p {
+    color: var(--colors-white-dark-active, #737373);
+    font-size: 10px;
+  }
 }
 @media (min-width: 320px) and (max-width: 767.98px) {
   .popular-products .vector {
@@ -844,5 +981,39 @@ form input.search {
   }
   .text-title {
     margin: 0 auto;
+  }
+  .slide {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .img-main-home-page img {
+    width: 350px;
+    height: 320px;
+  }
+  .text-main-home-page h1 {
+    color: var(--colors-green-darker, #042718);
+    font-size: 18px;
+    text-align: center;
+  }
+  .text-main-home-page h6 {
+    color: var(--colors-white-dark-active, #737373);
+    font-size: 15px;
+    text-align: center;
+  }
+  .text-main-home-page p {
+    color: var(--colors-white-dark-active, #737373);
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 5%;
+  }
+  .btn-buy-now-slide{
+    margin: 0 auto;
+  }
+  .slider-nav{
+    display: none;
+  }
+  .main-dot{
+    display: none;
   }
 }

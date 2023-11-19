@@ -517,7 +517,7 @@ form input.search {
   position: absolute;
   top: 5px;
   left: -1px;
-  background-color: #ff5722;
+  background-color: #FF2222;
   color: white;
   padding: 0px 5px;
   margin-top: 10px;
@@ -670,6 +670,7 @@ form input.search {
   font-family: "Poppins-Regular", Helvetica;
   font-size: 40px;
   font-weight: bold;
+  color: var(--colors-green-dark-active);
 }
 
 .contact-text-info{

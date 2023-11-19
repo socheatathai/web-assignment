@@ -1,7 +1,7 @@
 /* globals color and font */
 :root {
   --main-font: "Poppins", sans-serif; /* Set your desired font stack */
-  
+
   --cc-1: #fff;
   --colors-green-light: rgba(231, 241, 236, 1);
   --colors-green-light-hover: rgba(218, 234, 227, 1);
@@ -16,7 +16,7 @@
   --colors-green-dark-active: rgba(5, 50, 31, 1);
   --colors-green-darker: rgba(4, 39, 24, 1);
 
-  --colors-black-light:  #e7f1ec;
+  --colors-black-light: #e7f1ec;
   --colors-black-light-hover: rgba(223, 222, 221, 1);
   --colors-black-light-active: rgba(188, 187, 186, 1);
 
@@ -48,6 +48,7 @@
   --eff-5: 20px 30px 25px 0px rgba(0, 0, 0, 0.15);
   --err: ;
   --eff-7: 47px 12px 109px 0px rgba(0, 0, 0, 0.31);
-
-
+}
+html {
+  scroll-behavior: smooth;
 }

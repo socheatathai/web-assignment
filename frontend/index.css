@@ -54,12 +54,35 @@
   --err: ;
   --eff-7: 47px 12px 109px 0px rgba(0, 0, 0, 0.31);
 }
+html {
+  scroll-behavior: smooth;
+}
 * {
   font-family: var(--main-font);
   font-weight: normal;
 }
+/* section set global  */
+section {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  background-color: var(--colors-white-light);
+}
 a {
   text-decoration: none;
+}
+#scrollButton {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 8px;
+  background-color: var(--colors-green-light-active);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
 }
 .mainNav {
   background-color: var(--colors-green-light);
@@ -67,18 +90,13 @@ a {
   z-index: 999;
   top: 0;
 }
-/* section set global  */
-section {
-  margin: 0 auto;
-  text-align: center;
-  padding: 5px;
-  background-color: var(--colors-white-light);
-}
+
 .dropdown {
   display: none;
 }
 .custom-dropdown {
   display: none;
+  margin-left: -34px;
 }
 
 .navbar {
@@ -179,7 +197,7 @@ form input.search {
   justify-content: center;
   align-items: center;
   text-align: start;
-  padding: 10px 8%;
+  padding: 4.8% 8%;
 }
 
 /* Add styles for navigation buttons and dots */
@@ -225,7 +243,6 @@ form input.search {
   border-radius: 50%;
   display: inline-block;
   transition: left 2ms ease-in-out;
-
 }
 
 .dot.active {
@@ -237,13 +254,13 @@ form input.search {
 }
 .img-main-home-page img {
   padding: 10px 10px;
-  width: 380px;
-  height: 350px;
+  width: 530px;
+  height: 450px;
 }
 .text-main-home-page {
   width: 400px;
 }
-.text-main-home-page h1 {
+.text-main-home-page h5 {
   color: var(--colors-green-darker, #042718);
   font-size: 28px;
   font-style: normal;
@@ -666,35 +683,38 @@ form input.search {
 
 /* Get in touch with Us */
 
-.info-text{
+.info-text {
   font-family: "Poppins-Regular", Helvetica;
   font-size: 40px;
   font-weight: bold;
   color: var(--colors-green-dark-active);
 }
 
-.contact-text-info{
+.contact-text-info {
   font-family: "Poppins-Regular", Helvetica;
   font-weight: bold;
   margin: 10px;
   padding-bottom: 25px;
 }
-.background{
+.background {
   width: 100%;
-  background: linear-gradient( 90deg, var(--colors-green-light) 70%, var(--colors-green-normal) 30%);
+  background: linear-gradient(
+    90deg,
+    var(--colors-green-light) 70%,
+    var(--colors-green-normal) 30%
+  );
   height: auto;
 }
 @media (max-width: 480px) {
-  .background{
+  .background {
     width: 100%;
-    background:   var(--colors-green-light) ;
+    background: var(--colors-green-light);
     height: auto;
   }
 }
 
-
 .form-container {
-  background-color:var(--colors-green-light);
+  background-color: var(--colors-green-light);
   padding: 30px;
   margin: 50px auto;
   width: 80%;
@@ -703,22 +723,23 @@ form input.search {
   border: none;
   text-align: left;
 }
-.form-container .form-style{
+.form-container .form-style {
   width: 100%;
-
 }
 
-.form-container .form-group{
- margin-bottom: 5%;
- width: 100%;
+.form-container .form-group {
+  margin-bottom: 5%;
+  width: 100%;
 }
-input[type=text], input[type=email], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
   background-color: var(--colors-green-light); /* Light gray background */
   border: none;
-  border-bottom: 2px solid  gray;
+  border-bottom: 2px solid gray;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 100%;
   background-color: var(--colors-green-normal);
   color: white;
@@ -728,7 +749,7 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-.contact-container{
+.contact-container {
   position: relative;
   background-color: var(--colors-green-dark-active);
   padding: 30px;
@@ -738,31 +759,29 @@ input[type=submit] {
   color: #fff;
   text-align: left;
 }
- .contact-container .info-style{
+.contact-container .info-style {
   display: flex;
   align-items: center;
   margin: 10px;
- }
- .info-text-style{
+}
+.info-text-style {
   margin-left: 10px;
- }
+}
 
- .icon-info{
+.icon-info {
   margin-bottom: 10px;
- }
+}
 
-.contact-container .small-box{
-  position: absolute; 
-  top: -18px; 
-  left: -21px; 
+.contact-container .small-box {
+  position: absolute;
+  top: -18px;
+  left: -21px;
   width: 45px;
   height: 45px;
   background: var(--colors-green-normal);
 }
 
-
 /* ...................................... */
-
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .dropdown {
@@ -1114,13 +1133,13 @@ input[type=submit] {
     text-align: center;
     padding: 10px 5%;
   }
-  .btn-buy-now-slide{
+  .btn-buy-now-slide {
     margin: 0 auto;
   }
-  .slider-nav{
+  .slider-nav {
     display: none;
   }
-  .main-dot{
+  .main-dot {
     display: none;
   }
 }

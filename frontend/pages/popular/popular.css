@@ -49,6 +49,9 @@
   --err: ;
   --eff-7: 47px 12px 109px 0px rgba(0, 0, 0, 0.31);
 }
+html {
+  scroll-behavior: smooth;
+}
 section {
   margin: 0;
   padding: 0;

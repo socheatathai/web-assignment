@@ -509,7 +509,8 @@ form input.search {
   justify-content: center;
   text-align: center;
   margin: auto;
-  padding: 10px;
+  padding-bottom: 20px;
+  padding-top: 50px;
 }
 .popular-products h2 {
   font-size: 26px;
@@ -561,11 +562,11 @@ form input.search {
   color: red;
 }
 
-.favorite {
+/* .favorite {
   position: absolute;
   top: 10px;
   right: 10px;
-}
+} */
 
 .cart-image {
   width: 133.355px;
@@ -596,7 +597,7 @@ form input.search {
 .product-card .icon {
   margin: 3px 5px 5px 4px;
   color: #fff;
-  font-size: 15px;
+  font-size: 11px;
 }
 .product-card .add-to-cart {
   position: absolute;
@@ -622,6 +623,33 @@ form input.search {
 .product-card:hover {
   background-color: var(--colors-card-hover);
 }
+
+/* Small screen for phone and Ipad */
+@media (min-width: 375px) and (max-width: 767.98px) {  
+  .product-card .add-to-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .product-card .add-to-cart {
+    opacity: 1;
+    right: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {  
+  .product-card .add-to-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .product-card .add-to-cart {
+    opacity: 1;
+    right: 10px;
+  }
+}
+
+/* /////// */
 
 /* See morer button */
 .button {
@@ -678,6 +706,12 @@ form input.search {
     width: 80%;
     margin: 0 auto;
   }
+}
+
+
+.product-card-link {
+  color: inherit; /* this makes the link color the same as the text color */
+  text-decoration: none; /* this removes the underline */
 }
 /* ................................ */
 

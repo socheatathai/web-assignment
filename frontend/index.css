@@ -181,6 +181,7 @@ form input.search {
   height: 100%;
 }
 #slider-container {
+  padding: 0;
   position: relative;
   overflow: hidden;
 }
@@ -249,16 +250,15 @@ form input.search {
   background-color: #717171;
 }
 .img-main-home-page {
-  padding: 3% 10%;
   overflow: hidden;
+  width: 50%;
 }
 .img-main-home-page img {
-  padding: 10px 10px;
   width: 530px;
   height: 450px;
 }
 .text-main-home-page {
-  width: 400px;
+  width: 50%;
 }
 .text-main-home-page h5 {
   color: var(--colors-green-darker, #042718);
@@ -535,7 +535,7 @@ form input.search {
   position: absolute;
   top: 5px;
   left: -1px;
-  background-color: #FF2222;
+  background-color: #ff2222;
   color: white;
   padding: 0px 5px;
   margin-top: 10px;
@@ -625,7 +625,7 @@ form input.search {
 }
 
 /* Small screen for phone and Ipad */
-@media (min-width: 375px) and (max-width: 767.98px) {  
+@media (min-width: 375px) and (max-width: 767.98px) {
   .product-card .add-to-cart {
     position: absolute;
     bottom: 0;
@@ -637,7 +637,7 @@ form input.search {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1025px) {  
+@media (min-width: 768px) and (max-width: 1025px) {
   .product-card .add-to-cart {
     position: absolute;
     bottom: 0;
@@ -707,7 +707,6 @@ form input.search {
     margin: 0 auto;
   }
 }
-
 
 .product-card-link {
   color: inherit; /* this makes the link color the same as the text color */
@@ -937,6 +936,7 @@ input[type="submit"] {
   .img-main-home-page img {
     width: 350px;
     height: 320px;
+    object-fit: cover;
   }
   .text-main-home-page h1 {
     color: var(--colors-green-darker, #042718);
@@ -1146,14 +1146,24 @@ input[type="submit"] {
     display: flex;
     flex-direction: column-reverse;
   }
+  .img-main-home-page {
+    width: 120%;
+    height: 100%;
+    padding: 2% 2%;
+  }
 
   .img-main-home-page img {
-    width: 350px;
-    height: 320px;
+    width: 368px;
+    height: 340px;
+    object-fit: cover;
+    padding: 3% 5%;
+  }
+  .text-main-home-page {
+    width: 100%;
   }
   .text-main-home-page h1 {
     color: var(--colors-green-darker, #042718);
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
   }
   .text-main-home-page h6 {

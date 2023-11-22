@@ -6,7 +6,6 @@ function initMap() {
     zoom: 8,
   });
 }
-console.log(initMap);
 
 // popular products
 var likeBtns = document.querySelectorAll(".like-btn");

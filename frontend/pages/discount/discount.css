@@ -1,7 +1,7 @@
 /* globals color and font */
 :root {
   --main-font: "Poppins", sans-serif; /* Set your desired font stack */
- 
+
   --cc-1: #fff;
   --colors-green-light: rgba(231, 241, 236, 1);
   --colors-green-light-hover: rgba(218, 234, 227, 1);
@@ -16,7 +16,7 @@
   --colors-green-dark-active: rgba(5, 50, 31, 1);
   --colors-green-darker: rgba(4, 39, 24, 1);
 
-  --colors-black-light:  #e7f1ec;
+  --colors-black-light: #e7f1ec;
   --colors-black-light-hover: rgba(223, 222, 221, 1);
   --colors-black-light-active: rgba(188, 187, 186, 1);
 
@@ -48,5 +48,154 @@
   --eff-5: 20px 30px 25px 0px rgba(0, 0, 0, 0.15);
   --err: ;
   --eff-7: 47px 12px 109px 0px rgba(0, 0, 0, 0.31);
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  margin: 0;
+  padding: 0;
+}
+.slide-main {
+  background-color: var(--colors-green-light);
+  display: flex;
+  height: 600px;
+  padding: 10px 5%;
+}
+.slider-left-img {
+  width: 50%;
+}
+.slider-left-img img {
+  width: 330.016px;
+  height: 455.293px;
+  flex-shrink: 0;
+}
+.slide-right-text {
+  display: flex;
+  justify-content: start;
+  padding-top: 150px;
+}
+.main-text {
+  text-align: start;
+}
+.main-text p {
+  padding-top: 10px;
+}
+.carousel {
+  /* background-color: var(--colors-green-light); */
+  position: relative;
+  width: 100vw;
+  height: 600px;
+  overflow: hidden;
+}
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  /* transition: left 5s ease-in; */
+}
 
+.carousel-item.active {
+  left: 0;
+}
+.button-other-now {
+  position: absolute;
+  top: 80%;
+  left: 78%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  background-color: var(--colors-green-normal);
+  color: white;
+  border: none;
+  border-radius: 57px;
+  cursor: pointer;
+}
+.text-discount {
+  display: flex;
+  gap: 15px;
+  width: 240px;
+}
+.button-discount {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  border-radius: 30px;
+  align-items: center;
+  font-size: medium;
+  gap: 10px;
+  background-color: #f22;
+  color: white;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .slide-main {
+    display: flex;
+    height: 500px;
+    padding: 10px 5%;
+  }
+  .slider-left-img img {
+    width: 280.016px;
+    height: 400.293px;
+  }
+  .slide-right-text {
+    padding-top: 140px;
+  }
+  .slide-right-text h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .slide-main {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+  }
+  .slider-left-img {
+    width: 100%;
+  }
+  .slider-left-img img {
+    margin: 0 auto;
+    width: 250.016px;
+    height: 360.293px;
+  }
+  .slide-right-text {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .main-text {
+    text-align: center;
+  }
+  .button-other-now {
+    position: absolute;
+    top: 7%;
+    left: 64%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: var(--colors-green-normal);
+    color: white;
+    border: none;
+    border-radius: 57px;
+    cursor: pointer;
+  }
+  .text-discount {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .button-discount {
+    display: flex;
+    padding: 4px 15px;
+    border-radius: 30px;
+    font-size: small;
+    gap: 7px;
+  }
 }

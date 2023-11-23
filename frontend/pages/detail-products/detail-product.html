@@ -26,8 +26,8 @@
     <!-- import css for style Navbar -->
     <link rel="stylesheet" href="../../index.css" />
     <!-- import css for Page popular -->
-    <link rel="stylesheet" href="./discount.css" />
-    <title>Page_Discount</title>
+    <link rel="stylesheet" href="./detail-product.css" />
+    <title>Page_Popular</title>
   </head>
   <body>
     <nav class="mainNav">
@@ -40,16 +40,16 @@
                 <i class="fa-solid fa-bars dropbtn"></i>
               </button>
               <div class="custom-dropdown-content" id="customDropdownContent">
-                <a href="../../index.html">Home</a>
-                <a class="actions" href="#">Discount</a>
+                <a class="active" href="../../index.html">Home</a>
+                <a href="../discount/discount.html">Discount</a>
                 <a href="../popular/popular.html">Popular</a>
                 <a href="../contact/contact.html">Contact_Us</a>
               </div>
             </div>
             <!-- link  -->
             <div class="linkNav">
-              <a href="../../index.html">Home</a>
-              <a class="active" href="#">Discount</a>
+              <a class="active" href="../../index.html">Home</a>
+              <a href="../discount/discount.html">Discount</a>
               <a href="../popular/popular.html">Popular</a>
               <a href="../contact/contact.html">Contact_Us</a>
             </div>
@@ -90,71 +90,105 @@
       </div>
     </nav>
     <!-- slider product -->
-
     <section>
-      <section>
-        <div class="carousel">
-          <div class="carousel-item">
-            <div class="slide-main">
-              <div class="slider-left-img">
-                <img src="../../public/images/slid-starbuck1.png" alt="" />
-              </div>
-              <div class="slide-right-text">
-                <div class="main-text">
-                  <h1>
-                    Caramel Frappuccino <br />
-                    Blended Beverage
-                  </h1>
-                  <div class="text-discount">
-                    <p>390 Calories</p>
-                    <a class="button-discount">70% OFF</a>
-                  </div>
-                </div>
+      <div class="carousel">
+        <div class="carousel-item">
+          <div class="slide-main">
+            <div class="slider-left-img">
+              <img src="../../public/images/slid-starbuck1.png" alt="" />
+            </div>
+            <div class="slide-right-text">
+              <div class="main-text">
+                <h1>
+                  Caramel Frappuccino <br />
+                  Blended Beverage
+                </h1>
+                <p>7.50$</p>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="slide-main">
-              <div class="slider-left-img">
-                <img src="../../public/images/slid-starbuck2.png" alt="" />
-              </div>
-              <div class="slide-right-text">
-                <div class="main-text">
-                  <h1>
-                    a blended coffee drink <br />
-                    ypically made with coffee
-                  </h1>
-                  <div class="text-discount">
-                    <p>290 Calories</p>
-                    <a class="button-discount">40% OFF</a>
-                  </div>
-                </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slide-main">
+            <div class="slider-left-img">
+              <img src="../../public/images/slid-starbuck2.png" alt="" />
+            </div>
+            <div class="slide-right-text">
+              <div class="main-text">
+                <h1>
+                  a blended coffee drink <br />
+                  ypically made with coffee
+                </h1>
+                <p>370 Calories</p>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="slide-main">
-              <div class="slider-left-img">
-                <img src="../../public/images/slid-starbuck3.png" alt="" />
-              </div>
-              <div class="slide-right-text">
-                <div class="main-text">
-                  <h1>
-                    espresso, milk, and ice. <br />
-                    It is blended
-                  </h1>
-                  <div class="text-discount">
-                    <p>350 Calories</p>
-                    <a class="button-discount">50% OFF</a>
-                  </div>
-                </div>
+        </div>
+        <div class="carousel-item">
+          <div class="slide-main">
+            <div class="slider-left-img">
+              <img src="../../public/images/slid-starbuck3.png" alt="" />
+            </div>
+            <div class="slide-right-text">
+              <div class="main-text">
+                <h1>
+                  espresso, milk, and ice. <br />
+                  It is blended
+                </h1>
+                <p>350 Calories</p>
               </div>
             </div>
           </div>
-          <a class="button-other-now" href="">Other Now</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <section class="size-main">
+        <div class="option-size">
+          <div class="title">
+            <h1>Size Options</h1>
+            <img src="../../public/icons/underline-icon.png" alt="" />
+          </div>
+          <div class="option-img">
+            <div class="size-img" onclick="handleSizeClick(this, 'small')">
+              <div>
+                <img
+                  src="../../public/icons/size-of-cup-icon.png"
+                  width="57.556px"
+                  height="57.556px"
+                  alt=""
+                />
+                <p>Small</p>
+              </div>
+            </div>
+            <div class="size-img" onclick="handleSizeClick(this, 'medium')">
+              <div>
+                <img
+                  src="../../public/icons/size-of-cup-icon.png"
+                  width="70.346px"
+                  height="70.346px"
+                  alt=""
+                />
+                <p>Medium</p>
+              </div>
+            </div>
+            <div class="size-img" onclick="handleSizeClick(this, 'large')">
+              <div>
+                <img
+                  src="../../public/icons/size-of-cup-icon.png"
+                  width="82.497px"
+                  height="82.497px"
+                  alt=""
+                />
+                <p>Large</p>
+              </div>
+            </div>
+          </div>
+          <a class="button-other-now" href="#">Other Now</a>
         </div>
       </section>
     </section>
+
     <!-- FOOTER FEATURE -->
     <footer>
       <div class="footerMain">
@@ -195,6 +229,6 @@
       </div>
     </footer>
     <!-- import javascript -->
-    <script src="./discount.js"></script>
+    <script src="./detail-product.js"></script>
   </body>
 </html>

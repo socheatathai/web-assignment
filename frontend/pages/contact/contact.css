@@ -55,11 +55,6 @@
 }
 .background-contact {
   width: 100%;
-  /* background: linear-gradient(
-    90deg,
-    var(--colors-green-light) 70%,
-    var(--colors-green-normal) 30%
-  ); */
   background-color: var(--colors-green-light);
   height: auto;
 }

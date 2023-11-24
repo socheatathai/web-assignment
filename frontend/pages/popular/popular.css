@@ -339,3 +339,10 @@ section {
   text-decoration: none;
 }
 /* .................... */
+
+/* Small screen popular */
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .popular-products-all-product .vector-all-product {
+    display: none;
+  }
+}

@@ -736,7 +736,7 @@ form input.search {
     var(--colors-green-light) 70%,
     var(--colors-green-normal) 30%
   );
-  height: auto;
+  height: 650px;
 }
 @media (max-width: 480px) {
   .background {
@@ -763,6 +763,7 @@ form input.search {
 .form-container .form-group {
   margin-bottom: 5%;
   width: 100%;
+  
 }
 input[type="text"],
 input[type="email"],
@@ -770,6 +771,17 @@ textarea {
   background-color: var(--colors-green-light); /* Light gray background */
   border: none;
   border-bottom: 2px solid gray;
+  resize: none;
+}
+
+#message:focus {
+  outline: none;
+}
+#email:focus {
+  outline: none;
+}
+#name:focus {
+  outline: none;
 }
 
 input[type="submit"] {
@@ -782,6 +794,8 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
 }
+
+
 .contact-container {
   position: relative;
   background-color: var(--colors-green-dark-active);
@@ -802,7 +816,7 @@ input[type="submit"] {
 }
 
 .icon-info {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .contact-container .small-box {
@@ -955,6 +969,17 @@ input[type="submit"] {
   .popular-products .vector {
     display: none;
   }
+  .popular-products .vector_discount{
+    display: none;
+  }
+  .background{
+    height: auto;
+  }
+
+  .info-text{
+    margin-top: -70px;
+  }
+
   .navbar {
     padding: 10px 10%;
     justify-content: space-around;

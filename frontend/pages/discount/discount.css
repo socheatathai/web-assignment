@@ -199,3 +199,120 @@ section {
     gap: 7px;
   }
 }
+
+/* Discount all style */
+
+.discount-all-product {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.box-all-discount {
+  height: 13px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+.box-all-discount .vector-all-discount {
+  width: 125px;
+  height: 18px;
+  margin-top: -35px;
+  margin-left: 178px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+}
+
+.row-style-all-discount {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.product-cart-all-discount {
+  max-width: 209px;
+  height: 310px;
+  margin: 0px auto 40px;
+  background-color: var(--colors-card-background);
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.product-cart-all-discount h3 {
+  margin-top: 11%;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins-Regular", Helvetica;
+}
+.product-cart-all-discount p {
+  font-size: 9px;
+  margin: -8px 0px 7px 0px;
+  font-family: "Poppins-Regular", Helvetica;
+}
+/* .product-cart-all-discount h4 {
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--colors-green-normal);
+} */
+
+.product-card-link-all-discount {
+  color: inherit; 
+  text-decoration: none;
+}
+
+.cart-image-all-disocunt {
+  width: 160.355px;
+  height: 194.355px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: -15px;
+}
+
+.discount-tag {
+  justify-content: center;
+  display: flex;
+}
+
+.discount-tag .left {
+  background-color: #FF2222;
+  border-radius: 35px;
+  color: white;
+  flex: 1;
+  text-align: center;
+  margin: 9px 0px 10px 22px;
+}
+
+.discount-tag .all-dis {
+  margin: 7px 0px;
+  font-size: 13px;
+}
+
+.discount-tag .right {
+  
+  color: var(--colors-green-normal);
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.discount-tag .price-right {
+  margin: 2px 22px 0px 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ----------------- */
+
+/* discount small screen  */
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .discount-all-product .vector-all-discount {
+    display: none;
+  }
+}
+

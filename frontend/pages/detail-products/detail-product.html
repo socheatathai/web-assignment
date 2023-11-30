@@ -102,102 +102,70 @@
     </nav>
     <!-- slider product -->
     <section>
-      <div class="carousel">
-        <div class="carousel-item">
-          <div class="slide-main">
-            <div class="slider-left-img">
-              <img src="../../public/images/slid-starbuck1.png" alt="" />
-            </div>
-            <div class="slide-right-text">
-              <div class="main-text">
-                <h1>
-                  Caramel Frappuccino <br />
-                  Blended Beverage
-                </h1>
-                <p>7.50$</p>
+      <div class="container detail-main">
+        <div class="left-img">
+          <img src="../../public/images/slid-starbuck2.png" alt="" />
+        </div>
+        <div class="right-text">
+          <h1>Caramel Frappuccino Blended Beverage</h1>
+          <p>390 Calories</p>
+          <div class="set-img-size">
+            <div class="img-size-small" onclick="changeColor(this)">
+              <div class="small-img">
+                <img
+                  src="../../public/icons/size-of-cup-icon.png"
+                  width="30"
+                  height="40"
+                  alt=""
+                />
               </div>
+              <div class="small-text">small</div>
+            </div>
+            <div class="img-size-small" onclick="changeColor(this)">
+              <div class="small-img">
+                <img
+                  src="../../public/icons/size-of-cup-icon.png"
+                  width="40"
+                  height="50"
+                  alt=""
+                />
+              </div>
+              <div class="small-text">medium</div>
+            </div>
+            <div class="img-size-small" onclick="changeColor(this)">
+              <div class="small-img">
+                <img
+                  src="../../public/icons/size-of-cup-icon.png"
+                  width="50"
+                  height="60"
+                  alt=""
+                />
+              </div>
+              <div class="small-text">large</div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="slide-main">
-            <div class="slider-left-img">
-              <img src="../../public/images/slid-starbuck2.png" alt="" />
-            </div>
-            <div class="slide-right-text">
-              <div class="main-text">
-                <h1>
-                  a blended coffee drink <br />
-                  ypically made with coffee
-                </h1>
-                <p>370 Calories</p>
-              </div>
+
+          <div class="text-price-count">
+            <p class="text-price">1.70$</p>
+            <div class="qty">
+              <div class="minus" onclick="decrement()">-</div>
+              <input
+                type="number"
+                class="count"
+                name="qty"
+                value="1"
+                id="quantity"
+              />
+              <div class="minus" onclick="increment()">+</div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="slide-main">
-            <div class="slider-left-img">
-              <img src="../../public/images/slid-starbuck3.png" alt="" />
-            </div>
-            <div class="slide-right-text">
-              <div class="main-text">
-                <h1>
-                  espresso, milk, and ice. <br />
-                  It is blended
-                </h1>
-                <p>350 Calories</p>
-              </div>
-            </div>
+          <div class="mt-5">
+            <a class="btn-add-to-card" onclick="alert('Buy Now!');"
+              >add to card <i class="fa-solid fa-cart-shopping"></i
+            ></a>
           </div>
         </div>
       </div>
-    </section>
-    <section>
-      <section class="size-main">
-        <div class="option-size">
-          <div class="title">
-            <h1>Size Options</h1>
-            <img src="../../public/icons/underline-icon.png" alt="" />
-          </div>
-          <div class="option-img">
-            <div class="size-img" onclick="handleSizeClick(this, 'small')">
-              <div>
-                <img
-                  src="../../public/icons/size-of-cup-icon.png"
-                  width="57.556px"
-                  height="57.556px"
-                  alt=""
-                />
-                <p>Small</p>
-              </div>
-            </div>
-            <div class="size-img" onclick="handleSizeClick(this, 'medium')">
-              <div>
-                <img
-                  src="../../public/icons/size-of-cup-icon.png"
-                  width="70.346px"
-                  height="70.346px"
-                  alt=""
-                />
-                <p>Medium</p>
-              </div>
-            </div>
-            <div class="size-img" onclick="handleSizeClick(this, 'large')">
-              <div>
-                <img
-                  src="../../public/icons/size-of-cup-icon.png"
-                  width="82.497px"
-                  height="82.497px"
-                  alt=""
-                />
-                <p>Large</p>
-              </div>
-            </div>
-          </div>
-          <a class="button-other-now" href="#">Other Now</a>
-        </div>
-      </section>
     </section>
 
     <!-- FOOTER FEATURE -->
